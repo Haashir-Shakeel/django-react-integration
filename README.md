@@ -12,7 +12,13 @@
     - cd to react-app directory and run
         - npm run build
     - In Templates of Django settings.py:
-        - 'DIRS': [os.path.join(BASE_DIR, 'react-app/build')] OR 'DIRS':[BASE_DIR / 'react-app/build']
+        - 'DIRS': [os.path.join(BASE_DIR, 'react-app/build')]
+        
+        
+           OR 
+        
+        
+           'DIRS':[BASE_DIR / 'react-app/build']
 
 5. Url path configuration
     - go to urls.py and import TemplateView add a path 
@@ -22,7 +28,15 @@
 6. Configure static files
     - In Settings.py add
         - STATICFILES_DIRS = [
-            os.path.join(BASE_DIR, 'react-app/build/static'), OR BASE_DIR / 'react-app/build/static'
-        ] 
+            os.path.join(BASE_DIR, 'react-app/build/static') 
+            ]
+            
+            
+            OR 
+            
+            
+            STATICFILES_DIRS = [
+                BASE_DIR / 'react-app/build/static'
+            ]
 
 7. npm run build
